@@ -1,0 +1,52 @@
+<!---Andy MEjia 
+Period 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot and Cold</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="scripting.js" async></script>
+</head>
+<body>
+    <div class="borderdiv">
+        <h1>Im thinking of a number. Guess my number!</h1>
+        <h2>From 1 to 100</h2>
+        <h3><span id="Hot">HOT</span> or <span id="Cold">COLD</span></h3>
+        <p>Only have <strong id="countGuess">5 guesses</strong> right now</p>
+    </div>
+    <br>
+    <h1 id="gameOver"></h1>
+    <form>
+        <label>Input!</label><br>
+        <input type="number" value="50" id="quantity" min="1" max="100"><br>
+    </form>
+    <div class="button-container">
+        <button onclick="add1()">+1</button>
+        <button onclick="add5()">+5</button>
+        <button onclick="add10()">+10</button>
+        <button onclick="add25()">+25</button>
+        <button onclick="minus1()">-1</button>
+        <button onclick="minus5()">-5</button>
+        <button onclick="minus10()">-10</button>
+        <button onclick="minus25()">-25</button>
+    </div>
+    <div class="greenCommit">
+        <button id="commitbutton">Commit</button>
+        <button id="resetbutton">Reset</button>
+    </div>
+    <table id="guesslog">
+        <tr>
+            <th>Guess</th>
+            <th>Status</th>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
